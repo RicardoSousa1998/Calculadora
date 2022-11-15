@@ -10,10 +10,12 @@ while continuar == "S":
     print("/ para Divisão")
     print("% para Resto da divisão")
     print("sqr para raiz")
-
-
+    print("X para sair")
     op = input("\n? Operação  ")
     
+    if op == "X" or op =="x":
+      quit()
+
     while True:
       try:
           a = float(input("\nDigite o primeiro valor: "))
@@ -58,5 +60,3 @@ while continuar == "S":
     elif op == "sqr":
       print("\n", " √", a , "= ", math.sqrt(a) ," √", b , "= ",math.sqrt(b) ,"\n")
       continuar = input("Gostaria de fazer outra operação? [S]/[N]").upper()
-
-
